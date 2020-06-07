@@ -15,6 +15,7 @@ trait MyConfig {
   hadoop.mkdirs(stagingpath)
 
   try {
+    //Local file to HDFS folder
     hadoop.copyFromLocalFile(new Path("/home/deshbandhu/dummy_files/words.txt"), new Path("/user/root/deshbandhu1504/SparkPractise2/words.txt"))
 
   }
